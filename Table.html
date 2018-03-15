@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HTML & CSS Component Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  
+<header class="bg-black-darkest flex justify-between items-center p-4">
+
+  <div class="items-left p-4 md:p-0 text-white">
+     <a href="Nav.html" class="ml-4 text-4xl flex no-underline text-white hover:text-pink-dark">CODER</a>
+  </div>
+
+
+<div class="flex justify-between items-center">
+  <div>
+    <input class="mr-8 w-64 rounded-full h-8 ml-2 " type="text ml-2" placeholder=" 🔍 Search...">
+  </div>
+
+<div class="flex items-center">
+  <div>
+    <a href="#"> <i class="fab fa-github fa-2x text-right text-white hover:text-pink-dark"></i></a>
+  </div>
+</div>
+
+</header>
+
+
+<div class="wrapper flex flex-wrap min-h-screen font-sans leading-normal bg-blue-muted">
+  <main class="w-full h-auto lg:w-1/5 flex-no-shrink text-white p-8">
+    <h1 class="mb-2 text-lg text-center font-sans">Components</h1>
+    
+    <nav id="header" class="md:p-2 text-white">
+      <div class="container md:flex md:items-center md:justify-center mx-auto">
+        <div class="flex items-center justify-center md:block md:border-none p-4 md:p-0 text-white">
+         
+          <button v-on:click="showMenu = !showMenu" class="md:hidden text-white">
+            <i class="fas fa-2x fa-bars"></i>
+          </button>
+        </div>
+        <nav :class="{ hidden: showMenu }" class="md:block">
+          <ul class="md:flex md:items-center md:justify-end list-reset">
+            <li class="md:ml-2 text-center">
+              <div>
+            <a href="Button.html" class="text-center relative inline-block  mr-1 ml-1 text-sm px-4 py-1 rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Button</a>
+          </div>
+
+          <div>
+            <a href="Alert.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Alerts</a>
+          </div>
+
+          <div>
+            <a href="Card.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Cards</a>
+          </div>
+
+          <div>
+            <a href="Hero Unit.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Hero Unit</a>
+          </div>
+
+          <div>
+            <a href="NavList.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  text-center rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Navigation List</a>
+          </div>
+
+          <div>
+            <a href="Breadcrums.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">BreadCrumbs</a>
+          </div>
+
+          <div>
+            <a href="Pagination.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Pagination</a>
+          </div>
+
+          <div>
+            <a href="Form.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Form</a>
+          </div>
+
+          <div>
+            <a href="Media Object.html" class="relative inline-block  text-center mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Media Object</a>
+          </div>
+
+          <div>
+            <a href="Badges.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Badges</a>
+          </div>
+
+          <div>
+            <a href="Table.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Table</a>
+          </div>
+
+          <div>
+            <a href="Footer.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Footer</a>
+          </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </main>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#header',
+        data: {
+          showMenu: true
+        }
+      })
+</script>
+
+
+<aside class="w-full lg:w-4/5 flex-no-shrink bg-white p-8">
+
+    <div class="flex mb-4">
+      <div class="w-2/3 h-auto flex-wrap mb-4">
+        <h1 class="mb-4 leading-normal text-left text-5xl bold sm:lg text-blue-muted">Table</h1>
+      </div> 
+    </div>
+
+     <div class="flex mb-4">
+      <div class="mr-4 w-full text-lg leading-normal p-2 text-black">
+        <p>Tables are a nice way to organize lots of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+      </div> 
+    </div>
+    
+    <section class="pt-4 pb-4font-sans py-8 px-8">
+    <div class="font-sans flex pt-4 pb-4 pr-8 pl-8 bg-grey-lightest justify-center">
+       
+    <div class="bg-blue-muted rounded w-2/3 mx-auto">
+    <div class="py-8 text-center text-white font-sans font-bold uppercase text-5xl">Table</div>
+    <hr class="mb-8 my-0 border border-white">
+      
+    <div class="w-2/3 mx-auto">
+      <p class="text-center text-sm text-white font-sans">An HTML table is defined with the "table"tag. Each table row is defined with the "tr" tag. A table header is defined with the "th" tag. By default, table headings are bold and centered. A table data/cell is defined with the "td" tag.</p>
+    </div>
+      
+    <div class="py-8">
+    <table class="w-3/4 mx-auto text-white text-center">
+    <tbody>
+
+      <tr>
+        <td class="bg-white text-blue-muted sans py-4 border border-white rounded">Hot Dog</td>
+        <td class="bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white">$7.00</td>
+      </tr>
+
+      <tr>
+        <td class="bg-white text-blue-muted sans py-4 border border-white rounded">Cheeseburger</td>
+        <td class="bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white">$9.99</td>
+      </tr>
+
+      <tr>
+        <td class="bg-white text-blue-muted sans py-4 border border-white rounded">Drinks</td>
+        <td class="bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white">$3.76</td>
+      </tr>
+
+    </tbody>
+    </table>
+    </div>
+    </div>
+
+    </div>
+    </section>
+
+
+<pre><code class="html">
+
+&lt;div class=&quot;font-sans flex pt-4 pb-4 pr-8 pl-8 bg-grey-lightest justify-center&quot;&gt;
+       
+    &lt;div class=&quot;bg-blue-muted rounded w-2/3 mx-auto&quot;&gt;
+    &lt;div class=&quot;py-8 text-center text-white font-sans font-bold uppercase text-5xl&quot;&gt;Table&lt;/div&gt;
+    &lt;hr class=&quot;mb-8 my-0 border border-white&quot;&gt;
+      
+    &lt;div class=&quot;w-2/3 mx-auto&quot;&gt;
+      &lt;p class=&quot;text-center text-sm text-white font-sans&quot;&gt;An HTML table is defined with the &quot;table&quot;tag. Each table row is defined with the &quot;tr&quot; tag. A table header is defined with the &quot;th&quot; tag. By default, table headings are bold and centered. A table data/cell is defined with the &quot;td&quot; tag.&lt;/p&gt;
+    &lt;/div&gt;
+      
+    &lt;div class=&quot;py-8&quot;&gt;
+    &lt;table class=&quot;w-3/4 mx-auto text-white text-center&quot;&gt;
+    &lt;tbody&gt;
+
+      &lt;tr&gt;
+        &lt;td class=&quot;bg-white text-blue-muted sans py-4 border border-white rounded&quot;&gt;Hot Dog&lt;/td&gt;
+        &lt;td class=&quot;bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white&quot;&gt;$7.00&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+        &lt;td class=&quot;bg-white text-blue-muted sans py-4 border border-white rounded&quot;&gt;Cheeseburger&lt;/td&gt;
+        &lt;td class=&quot;bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white&quot;&gt;$9.99&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr&gt;
+        &lt;td class=&quot;bg-white text-blue-muted sans py-4 border border-white rounded&quot;&gt;Drinks&lt;/td&gt;
+        &lt;td class=&quot;bg-white text-pink-dark hover:bg-blue-muted sans py-4 border rounded hover:border-white hover:text-white&quot;&gt;$3.76&lt;/td&gt;
+      &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+
+</aside>
+
+
+<footer class="w-full p-2 text-center bg-black-darkest text-center text-white">
+  <small>&copy; Cesar Corona</small>
+</footer>
+
+</body>
+</html>

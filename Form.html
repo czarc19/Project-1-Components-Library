@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HTML & CSS Component Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  
+<header class="bg-black-darkest flex justify-between items-center p-4">
+
+  <div class="items-left p-4 md:p-0 text-white">
+     <a href="Nav.html" class="ml-4 text-4xl flex no-underline text-white hover:text-pink-dark">CODER</a>
+  </div>
+
+
+<div class="flex justify-between items-center">
+  <div>
+    <input class="mr-8 w-64 rounded-full h-8 ml-2 " type="text ml-2" placeholder=" 🔍 Search...">
+  </div>
+
+<div class="flex items-center">
+  <div>
+    <a href="#"> <i class="fab fa-github fa-2x text-right text-white hover:text-pink-dark"></i></a>
+  </div>
+</div>
+
+</header>
+
+
+<div class="wrapper flex flex-wrap min-h-screen font-sans leading-normal bg-blue-muted">
+  <main class="w-full h-auto lg:w-1/5 flex-no-shrink text-white p-8">
+    <h1 class="mb-2 text-lg text-center font-sans">Components</h1>
+    
+    <nav id="header" class="md:p-2 text-white">
+      <div class="container md:flex md:items-center md:justify-center mx-auto">
+        <div class="flex items-center justify-center md:block md:border-none p-4 md:p-0 text-white">
+         
+          <button v-on:click="showMenu = !showMenu" class="md:hidden text-white">
+            <i class="fas fa-2x fa-bars"></i>
+          </button>
+        </div>
+        <nav :class="{ hidden: showMenu }" class="md:block">
+          <ul class="md:flex md:items-center md:justify-end list-reset">
+            <li class="md:ml-2 text-center">
+              <div>
+            <a href="Button.html" class="text-center relative inline-block  mr-1 ml-1 text-sm px-4 py-1 rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Button</a>
+          </div>
+
+          <div>
+            <a href="Alert.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Alerts</a>
+          </div>
+
+          <div>
+            <a href="Card.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Cards</a>
+          </div>
+
+          <div>
+            <a href="Hero Unit.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Hero Unit</a>
+          </div>
+
+          <div>
+            <a href="NavList.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  text-center rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Navigation List</a>
+          </div>
+
+          <div>
+            <a href="Breadcrums.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">BreadCrumbs</a>
+          </div>
+
+          <div>
+            <a href="Pagination.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Pagination</a>
+          </div>
+
+          <div>
+            <a href="Form.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Form</a>
+          </div>
+
+          <div>
+            <a href="Media Object.html" class="relative inline-block  text-center mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Media Object</a>
+          </div>
+
+          <div>
+            <a href="Badges.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Badges</a>
+          </div>
+
+          <div>
+            <a href="Table.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Table</a>
+          </div>
+
+          <div>
+            <a href="Footer.html" class="relative inline-block  mr-1 ml-1 text-sm px-4 py-1  rounded text-white border-white hover:border-transparent hover:text-pink-dark hover:bg-white mt-4 lg:mt-0 no-underline">Footer</a>
+          </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </main>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#header',
+        data: {
+          showMenu: true
+        }
+      })
+</script>
+
+
+<aside class="w-full lg:w-4/5 flex-no-shrink bg-white p-8">
+
+    <div class="flex mb-4">
+      <div class="w-2/3 h-auto flex-wrap mb-4">
+        <h1 class="mb-4 leading-normal text-left text-5xl bold sm:lg text-blue-muted">Form</h1>
+      </div> 
+    </div>
+
+     <div class="flex mb-4">
+      <div class="mr-4 w-full text-lg leading-normal p-2 text-black">
+        <p>Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms</p>
+      </div> 
+    </div>
+    
+    <section class="pt-4 pb-4">
+    <div class="flex pt-4 pb-4 bg-grey-lightest justify-center">
+
+      <div class="bg-blue-muted rounded px-6 py-6 pt-4 mb-4 flex flex-col my-2">
+
+          <div class="-mx-3 md:flex mb-6">
+
+             <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase text-white text-md font-bold mb-2">
+               Name
+              </label>
+              <input class="block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3" type="text" placeholder="Name">
+              </div>
+
+              <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase text-white text-md font-bold mb-2">
+               Last Name
+              </label>
+              <input class="block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3" type="text" placeholder="Last Name">
+              </div>
+
+        </div>
+
+
+        <div class="-mx-3 md:flex mb-6">
+
+        <div class="md:w-full px-3 items-center">
+
+              <label class="block uppercase text-white text-md font-bold mb-2">
+                Password
+              </label>
+              <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3" placeholder="******************">
+              </div>
+
+        </div>
+
+          <div class="-mx-3 md:flex mb-2 items-center">
+
+            <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                City
+                </label>
+                <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4" placeholder="Texas">
+
+            </div>
+
+            <div class="md:w-1/2 px-3">
+                 <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                  State
+                  </label>
+                  <div class="relative">
+                  <select class="block appearance-none w-full bg-grey-lighter border border-blue-darker text-grey-darker py-3 px-4 pr-8 rounded">
+                     <option>Los Angeles</option>
+                     <option>New York</option>
+                     <option>Texas</option>
+                  </select>
+
+                 <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-white"></div>
+                 </div>
+             </div>
+
+            <div class="md:w-1/2 px-3">
+                  <label class="block uppercase tracking-wide text-white text-xs font-bold mt-2 mb-2">
+                   Zipcode
+                  </label>
+                  <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4" placeholder="90013">
+            </div>
+
+    </div>
+    </section>
+
+
+
+<section class="overflow-y-scroll bg-grey-light text-sm mt-8 max-w">
+
+<pre><code class="html">
+
+  &lt;div class=&quot;flex pt-4 pb-4 bg-grey-lightest justify-center&quot;&gt;
+
+      &lt;div class=&quot;bg-blue-muted rounded px-6 py-6 pt-4 mb-4 flex flex-col my-2&quot;&gt;
+
+          &lt;div class=&quot;-mx-3 md:flex mb-6&quot;&gt;
+
+             &lt;div class=&quot;md:w-1/2 px-3 mb-6 md:mb-0&quot;&gt;
+              &lt;label class=&quot;block uppercase text-white text-md font-bold mb-2&quot;&gt;
+               Name
+              &lt;/label&gt;
+              &lt;input class=&quot;block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3&quot; type=&quot;text&quot; placeholder=&quot;Name&quot;&gt;
+              &lt;/div&gt;
+
+              &lt;div class=&quot;md:w-1/2 px-3 mb-6 md:mb-0&quot;&gt;
+              &lt;label class=&quot;block uppercase text-white text-md font-bold mb-2&quot;&gt;
+               Last Name
+              &lt;/label&gt;
+              &lt;input class=&quot;block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3&quot; type=&quot;text&quot; placeholder=&quot;Last Name&quot;&gt;
+              &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;-mx-3 md:flex mb-6&quot;&gt;
+
+        &lt;div class=&quot;md:w-full px-3 items-center&quot;&gt;
+
+              &lt;label class=&quot;block uppercase text-white text-md font-bold mb-2&quot;&gt;
+                Password
+              &lt;/label&gt;
+              &lt;input class=&quot;appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4 mb-3&quot; placeholder=&quot;******************&quot;&gt;
+              &lt;/div&gt;
+
+        &lt;/div&gt;
+
+          &lt;div class=&quot;-mx-3 md:flex mb-2 items-center&quot;&gt;
+
+            &lt;div class=&quot;md:w-1/2 px-3 mb-6 md:mb-0&quot;&gt;
+                &lt;label class=&quot;block uppercase tracking-wide text-white text-xs font-bold mb-2&quot;&gt;
+                City
+                &lt;/label&gt;
+                &lt;input class=&quot;appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4&quot; placeholder=&quot;Texas&quot;&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;md:w-1/2 px-3&quot;&gt;
+                 &lt;label class=&quot;block uppercase tracking-wide text-white text-xs font-bold mb-2&quot;&gt;
+                  State
+                  &lt;/label&gt;
+                  &lt;div class=&quot;relative&quot;&gt;
+                  &lt;select class=&quot;block appearance-none w-full bg-grey-lighter border border-blue-darker text-grey-darker py-3 px-4 pr-8 rounded&quot;&gt;
+                     &lt;option&gt;Los Angeles&lt;/option&gt;
+                     &lt;option&gt;New York&lt;/option&gt;
+                     &lt;option&gt;Texas&lt;/option&gt;
+                  &lt;/select&gt;
+
+                 &lt;div class=&quot;pointer-events-none absolute pin-y pin-r flex items-center px-2 text-white&quot;&gt;&lt;/div&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt;
+
+            &lt;div class=&quot;md:w-1/2 px-3&quot;&gt;
+                  &lt;label class=&quot;block uppercase tracking-wide text-white text-xs font-bold mt-2 mb-2&quot;&gt;
+                   Zipcode
+                  &lt;/label&gt;
+                  &lt;input class=&quot;appearance-none block w-full bg-grey-lighter text-grey-darker border border-blue-darker rounded py-3 px-4&quot; placeholder=&quot;90013&quot;&gt;
+            &lt;/div&gt;
+
+    &lt;/div&gt;
+
+</code></pre>
+
+</section>
+</aside>
+
+
+<footer class="w-full p-2 text-center bg-black-darkest text-center text-white">
+  <small>&copy; Cesar Corona</small>
+</footer>
+
+</body>
+</html>
